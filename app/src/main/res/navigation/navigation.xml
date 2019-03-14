@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/navigation" app:startDestination="@id/fromFragment">
+
+    <fragment android:id="@+id/fromFragment" android:name="sobaya.app.navigation.FromFragment"
+              android:label="FromFragment">
+        <action android:id="@+id/action_fromFragment_to_toFragment" app:destination="@id/toFragment"/>
+    </fragment>
+    <fragment android:id="@+id/toFragment" android:name="sobaya.app.navigation.ToFragment" android:label="ToFragment">
+        <argument android:name="id" app:argType="integer"/>
+    </fragment>
+</navigation>
